@@ -1,0 +1,217 @@
+@media only screen and (max-width: 575px) {
+    .hero .hero-container .hero-header .hero-heading h1 {
+        font-size: 1.5rem;
+    }
+    .hero .hero-container .hero-header .hero-heading h1 strong {
+        font-size: 1.6rem;
+    }
+    .hero .hero-container .hero-header .hero-heading p {
+        font-size: 0.9rem;
+    }
+    .hero .hero-container .hero-header .hero-heading h2 {
+        font-size: 1.3rem;
+    }
+    .choose .col-md-5 {
+        margin-bottom: 4rem;
+    }
+    .custom-btn {
+        width: 150px;
+    }
+    .hero .hero-container .hero-img img {
+        max-width: 100%;
+    }
+    .section-heading h2 {
+        font-size: 1.5rem;
+
+    }
+    .section-heading p {
+        font-size: 0.9rem;
+        margin: 0rem;
+    }
+    .I-do .col-md-4 .card{
+        margin-bottom: 2rem;
+    }
+    .I-do .col-md-4:last-child .card{
+        margin-bottom: 0rem;
+    }
+    .I-do .do-head .heading p {
+        font-size: 0.9rem;
+    }
+    .button-block .custom-btn2 {
+        margin: 0.2rem;
+        width: 116px;
+    }
+    .section-heading2 h2 {
+        font-size: 1.5rem;
+    }
+    button.custom-btn.btn-first.cal-btn {
+        margin-bottom: 1rem;
+    }
+    section.bmi {
+      padding-top: 6rem;
+      padding-bottom: 0;
+    }
+    #testimonials .client-info {
+        padding-left: 0.8rem;
+    }
+    #testimonials .col-md-6.d-flex {
+        margin-bottom: 4rem;
+    }
+    section#testimonials {
+        padding-bottom: 0rem;
+    }
+    .yoga {
+        padding: 5rem 0rem;
+    }
+    .yoga .yoga-container h2 {
+        font-size: 2rem;
+    }
+    .yoga .yoga-container h3 {
+        font-size: 1.5rem;
+    }
+    #news .col-lg-4 {
+        margin-bottom: 4rem;
+    }
+
+    #news .col-lg-4:last-child {
+        margin-bottom: 0rem;
+    }
+    .contact-form {
+        margin-bottom: 4rem;
+    }
+    section.slider img.mx-auto.d-block {
+        width: 300px;
+        padding: 2rem;
+    }
+    section.slider {
+        padding: 3rem 0rem;
+    }
+    .footer-section .col-md-4 {
+        margin-bottom: 4rem;
+    }
+}
+/* min-width 576px and max-width 767px */
+@media only screen and (min-width: 576px) and (max-width:767px) {
+
+    .hero .hero-container .hero-header .hero-heading h1 {
+        font-size: 1.5rem;
+    }
+    .hero .hero-container .hero-header .hero-heading h1 strong {
+        font-size: 2rem;
+    }
+    .hero .hero-container .hero-header .hero-heading h2 {
+        font-size: 1.5rem;
+    }
+    .custom-btn {
+        width: 150px;
+    }
+    section.choose .col-md-5 {
+        margin-bottom: 3rem;
+    }
+    .button-block .custom-btn2 {
+        margin: 0.2rem;
+    }
+    button.custom-btn.btn-first.cal-btn {
+        margin-bottom: 1rem;
+    }
+    section.bmi {
+        padding-bottom: 0rem;
+    }
+    section#testimonials {
+        padding-bottom: 0rem;
+    }
+    #news .col-lg-4 {
+        margin-bottom: 3rem;
+    }
+
+    #news .col-lg-4:last-child {
+        margin-bottom: 0rem;
+    }
+    .yoga .yoga-container h2 {
+        font-size: 2.3rem;
+    }
+    .contact-form {
+        margin-bottom: 3rem;
+    }
+    .footer-section .col-md-4 {
+        margin-bottom: 4rem;
+    }
+}
+
+/* min-width 768px and max-width 991px */
+@media only screen and (min-width: 768px) and (max-width:991px) {
+
+    .hero .hero-container .hero-header .hero-heading h1 {
+        font-size: 2.1rem;
+    }
+    .hero .hero-container .hero-header .hero-heading h1 strong {
+        font-size: 2.1rem;
+    }
+    .custom-btn {
+        width: 160px;
+    }
+    .do-foot .card {
+      margin-bottom: 0rem;
+    }
+    section.choose .justify-content-between {
+        align-items: flex-end;
+    }
+    section.choose .col-md-5 {
+        padding-bottom: 2rem;
+    }
+    .button-block .custom-btn2 {
+        margin: 0.2rem;
+    }
+    #news .col-lg-4 {
+        margin-bottom: 3rem;
+    }
+
+    #news .col-lg-4:last-child {
+        margin-bottom: 0rem;
+        align-self: center;
+
+    }
+    #news .row.row-cols-md-2 {
+        justify-content: center;
+    }
+    .contact-form {
+        margin-bottom: 3rem;
+    }
+    .footer-social ul li a {
+        padding: 6px 6px;
+        margin-right: 0.2rem;
+        text-align: center;
+        line-height: 1;
+        border-radius: 2px;
+    }
+
+}
+
+/* min-width 992px and max-width 1199px */
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+    .hero .hero-container .hero-header .hero-heading h1 {
+        font-size: 3.1rem;
+    }
+    .hero .hero-container .hero-header .hero-heading h1 strong {
+        font-size: 3.1rem;
+    }
+    .button-block .custom-btn2 {
+        margin: 0.2rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

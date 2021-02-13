@@ -1,0 +1,764 @@
+ /* ------------------
+    univarsal selector 
+    -----------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+/*  ---------------
+    variable
+    -------------- */
+:root {
+    scroll-behavior: smooth;
+
+/*  ------------
+    colors
+    --------- */
+    --primary:#FB5B21;
+    --secondary:#111111;
+    --lighter:#FFFFFF;
+    --dark:#000;
+    --heaven:#666666;
+
+/*  ---------------
+    fonts
+    ----------- */
+    --regular:roboto-regular;
+    --thin:roboto-thin;
+    --bold:roboto-bold;
+    --light:roboto-light;
+    --medium: roboto-medium;
+}
+/*  -------------
+    font-family
+    ---------- */
+@font-face {
+    font-family: roboto-regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: roboto-thin;
+    src: url(../fonts/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: roboto-bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+        
+@font-face {
+    font-family: roboto-light;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: roboto-medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+/*  ----------------
+    Utilities
+    ------------  */
+section {
+    padding-top: 6rem;
+}
+li,a {
+    display: inline-block;
+    transition: 0.5s ease;
+}
+.custom-btn {
+    width: 200px;
+    height: 50px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    color: var(--dark);
+    font-family: var(--medium);
+    font-size: 0.9rem;
+    transition: 0.5s ease;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+.custom-btn.btn-first:hover {
+    background-color: var(--primary);
+    color: var(--lighter);
+}
+.section-heading {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.section-heading h2 {
+    font-family: var(--medium);
+    font-size: 2rem;
+    color: var(--secondary);
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+.section-heading h2::after {
+    position: absolute;
+    content: "";
+    background: var(--primary);
+    width: 70px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section-heading p {
+    color: var(--heaven);
+    font-size: 0.98rem;
+    font-family: var(--light);
+    padding-top: 1rem;
+}
+.section-heading2 h2 {
+    color: var(--lighter);
+    font-family: var(--medium);
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+.section-heading2 h2::after {
+    background-color: var(--primary);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+}
+.section-heading2 p {
+    font-family: var(--light);
+    font-size: 0.9rem;
+    color: var(--lighter);
+    padding-top: 1rem;
+
+
+}
+
+
+/* header-top */
+  
+.header-top {
+    background-color: #16181A;
+    font-family: var(--regular);
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    border-top: 2px solid var(--primary);
+}
+.header-top a {
+    color: var(--lighter);
+    transition: 0.5s ease all;
+}
+.header-top .call>span, .mail>span {
+    color: var(--primary);
+}
+.social .navbar-nav a {
+    padding: 0px 0.5rem;
+}
+.social .navbar-nav a:hover {
+    color: var(--primary)!important;
+}
+/* ---------------
+02- mean-menu
+--------------- */
+.main-container{
+    padding: 1rem 0;
+    background-color: var(--dark);
+
+}
+
+
+.navbar-brand img {
+  max-width: 140px;
+}
+.navbar-nav li a{
+    z-index: 1;
+    color: var(--lighter)!important;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    font-family: var(--medium);
+}
+.main-container .navbar .navbar-nav li a:hover {
+    color: var(--primary)!important;
+}
+.main-container .navbar .navbar-nav span {
+    color: var(--lighter)!important;
+}
+.main-container .navbar .navbar-nav .search{
+    color: var(--primary)!important;
+}
+.main-container .navbar .navbar-nav .fa-shopping-cart{
+    color: var(--lighter)!important;
+}
+.main-container .navbar .navbar-nav .shopping-cart{
+    position: relative;
+}
+.main-container .navbar .navbar-nav .shopping-cart .badge{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--primary);
+    color: var(--lighter);
+}
+/* ---------------
+03-hero
+---------------- */
+.hero {
+    background:url(../img/bg4-1536x720.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 0;
+}
+.hero .hero-container .hero-img img {
+    max-width: 75%;
+}
+.hero .hero-container {
+    align-items: center;
+    padding-top: 9rem;
+}
+.hero .hero-container .hero-header {
+    color: var(--lighter);
+}
+.hero .hero-container .hero-header .hero-heading h2 {
+    font-size: 2.2rem;
+    font-family: var(--medium);
+}
+.hero .hero-container .hero-header .hero-heading h1 strong {
+    font-size: 4rem;
+    font-family: var(--bold);
+}
+.hero .hero-container .hero-header .hero-heading h1 {
+    font-size: 4rem;
+}
+.hero .hero-container .hero-header .hero-heading p {
+    font-size: 1.2rem;
+    font-family: var(--medium);
+}
+.hero-footer {
+    padding-bottom: 3rem;
+}
+.hero .hero-container .hero-social .hero-nav li a{
+    font-size: 1rem;
+    border: 1px solid #888888;
+    padding: 6px 14px;
+    margin-left: 0.6rem;
+    color: var(--primary);
+
+}
+.hero .hero-container .hero-social .hero-nav li a:hover{
+    background-color: var(--primary);
+    color: var(--lighter);
+    border: 1px solid transparent;
+}
+/* ------------
+04- what i do
+------------ */
+.do-head {
+    padding-bottom: 3rem;
+}
+.I-do .do-head .heading h2 {
+    font-family: var(--medium);
+    font-size: 2rem;
+    color: var(--secondary);
+
+}
+.I-do .do-head .heading h2 span {
+    font-family: var(--medium);
+    font-size: 2rem;
+    color: var(--primary);
+
+}
+.I-do .do-head .heading p {
+    color: var(--heaven);
+    font-family: var(--light);
+    font-size: 0.99rem;
+
+}
+.I-do .do-head .do-img img {
+    max-width: 100%:
+
+}
+.do-foot .card-body .icon span {
+    margin-right: 1.5rem;
+    padding: 1rem 1.1rem;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--lighter);
+    background-color: var(--primary);
+}
+.do-foot .card {
+    margin-bottom: 2rem;
+}
+/* ------------------
+05- featured classes
+----------------- */
+.card .card-img-top img {
+    width: 100%;
+}
+/* -------------
+06-why choose me
+-------------- */
+.choose-left button {
+    color: var(--lighter);
+    font-family: var(--medium);
+    font-size: 0.9rem;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    height: 45px;
+    text-align: left;
+    padding: 0rem 1.8rem;
+    margin-bottom: 0.5rem;
+}
+.choose-left button:first-child {
+   background-color: var(--primary);
+   color: var(--lighter);
+}
+.choose-left button:nth-of-type(2) {
+    background-color: transparent;
+    border: 1px solid #6f6f6fb0;
+    color: var(--secondary);
+}
+.choose-left button:nth-of-type(3) {
+    background-color: transparent;
+    border: 1px solid #6f6f6fb0;
+    color: var(--secondary);
+}
+.choose-left div p {
+    color: var(--heaven);
+    font-size: 0.9rem;
+
+}
+.choose-left button:focus {
+    box-shadow: 0 0 0 0rem rgb(0 123 255 / 25%);
+    
+}
+/* -------------
+06-Schedule
+-------------- */
+#schedule {
+    background: url(../img/background_image2.jpg) no-repeat;
+    padding: 6rem 0;
+}
+.schedule-block .button-block {
+    margin-bottom: 2rem;
+}
+.schedule-heading h2,p{
+    color: var(--lighter);
+}
+.button-block .custom-btn2 {
+    width: 130px;
+    margin-right: 0.6rem;
+}
+.btn-second {
+    margin-top: 0.3rem;
+    padding: 10px 20px;
+    height: 50px;
+    line-height: 30px;
+    border-radius: 50px;
+    color: var(--lighter);
+    font-family: var(--medium);
+    font-size: 0.9rem;
+    transition: 0.5s ease;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    text-align: center;
+    background-color: var(--primary);
+}
+.btn-join {
+    background-color: var(--lighter);
+    color: var(--secondary);
+    width: 100px;
+    height:40px;
+    text-align: center;
+    padding: 5px 10px;
+    line-height: 30px;
+    border-radius: 50px;
+    text-transform: capitalize;
+    font-family: var(--regular);
+    font-size: 0.9rem;
+    transition: 0.5s ease;
+}
+.btn-join:hover {
+    background-color: var(--dark);
+    color: var(--lighter);
+    
+}
+#trainers .trainer-container .trainer-img{
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0;
+}
+#trainers .trainer-container .trainer-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    opacity: 0.7;
+    top: 0;
+    right: 100%;
+    transition: 0.5s ease all;
+    
+}
+#trainers .trainer-container .trainer-img:hover .trainer-overlay {
+    right: 0%;
+}
+#trainers .trainer-container .trainer-img ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+#trainers .trainer-container .trainer-img ul li a {
+    padding: 0.2rem 0.4rem;
+    border-radius: 50%;
+    border: 2px solid var(--lighter);
+    color: var(--lighter);
+    font-size: 0.7rem;
+
+}
+#trainers .trainer-container .trainer-img ul li a:hover {
+    background-color: var(--lighter);
+    color: var(--dark);
+}
+
+#trainers .trainer-container .trainer-img img {
+    width: 100%;
+    
+}
+#trainers .trainer-container {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+#trainers .trainer-container h2 {
+    font-family: var(--medium);
+    font-size: 1.2rem;
+    padding-top: 1.5rem;
+    text-transform: capitalize;
+}
+#trainers .trainer-container p {
+    color: var(--heaven);
+}
+.bmi {
+    background: url(../img/bmi.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 6rem 0;
+}
+#bmicollapse {
+    color: var(--lighter);
+    font-family: var(--medium);
+    font-size: 0.9rem;
+    position: relative;
+}
+#bmicollapse form .form-group{
+    margin-bottom: 1rem;
+}
+.custom-control-input:first-child {
+    position: inherit;
+    margin-right: 0.5rem;
+}
+#bmicollapse .collapse .bmi-btn{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid var(--heaven);
+    background-color: transparent;
+    color: var(--lighter);
+}
+.bmi .bmi-right table.table {
+    border-spacing: 1px;
+    border-collapse: separate;
+    border-radius: 20px;
+    font-family: var(--medium);
+    font-size: 0.9rem;
+
+}
+.bmi .bmi-right .table tr,td {
+    background-color: var(--primary);
+    color: var(--lighter);
+    padding: 1rem;
+    
+}
+.bmi .bmi-right .table th:first-child {
+    border-radius: 20px 0px 0px 0px;
+}
+.bmi .bmi-right .table th:last-child {
+    border-radius: 0px 20px 0px 0px;
+}
+.bmi .bmi-right .table tr:last-child td:first-child {
+    border-radius: 0px 0px 0px 20px;
+}
+.bmi .bmi-right .table tr:last-child td:last-child{
+    border-radius: 0px 0px 20px 0px;
+}
+/* ----------------
+07-testimonials
+---------------- */
+section#testimonials {
+    padding: 6rem 0rem;
+}
+
+#testimonials .testimonials-heading h2 {
+    color: var(--secondary);
+    margin-bottom: 4rem;
+}
+#testimonials .client-img img {
+    border-radius: 50%;
+    width: 100px;
+}
+#testimonials .client-info {
+    padding-left: 2rem;
+    font-family: var(--medium);
+
+}
+#testimonials .client-info h3{
+    color: var(--secondary);
+    font-size:1.4rem;
+    font-family: var(--medium);
+    position: relative;
+}
+#testimonials .client-info h3 span{
+    position: absolute;
+    right: 10%;
+    color: #66666629;
+}
+
+#testimonials .client-info p{
+    color: var(--heaven);
+    font-size: 0.9rem;
+    font-family: var(--medium);
+    line-height: 30px;
+}
+/* ----------------
+08- Yoga  section
+---------------- */
+.yoga {
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../img/backgorund_image.jpg);
+    z-index: -1;
+    padding: 7rem 0;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+.yoga .yoga-container {
+    color: var(--lighter);
+}
+.yoga .yoga-container h2{
+    font-family: var(--bold);
+    font-size: 2.6rem;
+}
+.yoga .yoga-container h3{
+    font-family: var(--regular);
+    font-size: 2rem;
+}
+.yoga .yoga-container h3 span{
+    color: var(--primary);
+}
+.yoga .yoga-container .yoga-btn {
+    width: 200px;
+    height: 60px;
+    outline: none;
+    border:3px solid var(--primary);
+    background-color: transparent;
+    color: var(--lighter);
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    font-family: var(--medium);
+    transition: 0.5s ease all;
+}
+.yoga .yoga-container .yoga-btn:hover {
+    background-color: var(--primary);
+    border: 3px solid transparent;
+}
+/*----------------
+09- Latest news
+---------------- */
+.card {
+    transition: 0.5s ease all;
+}
+.card:hover {
+    /* box-shadow: 3px 0px 20px 0px #9c9b9b5c, -3px 0px 15px 0px #7777774d; */
+    box-shadow: 0 0 10px #ccc;
+}
+.card .img-container {
+    position: relative;
+
+}
+.card .img-container .card-date {
+    position: absolute;
+    background-color: var(--primary);
+    width: 50px;
+    height: 60px;
+    font-family: var(--medium);
+    font-size: 0.9rem;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 0px 0px 5px 0px;
+    z-index: 2;
+
+}
+.card .img-container .img-overlay {
+    background-color: rgb(0 0 0 / 66%);
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s ease all;
+    overflow: hidden;
+}
+.card .img-container:hover .img-overlay {
+    width: 100%;
+} 
+.card .img-container .img-link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--lighter);
+    border: 2px solid var(--primary);
+    z-index: 1;
+    border-radius: 50%;
+    padding: 0.4rem 0.7rem;
+
+} 
+.card .card-body h4.card-title {
+    font-family: var(--medium);
+    color: var(--secondary);
+    font-size: 1.3rem;
+
+}
+.card .card-body p.card-text {
+    color: var(--heaven);
+    font-family: var(--light);
+    line-height: 30px;
+} 
+/* -------------
+09-contact
+-------------- */
+#contact .contact-heading h2 {
+    color: var(--secondary);
+    margin-bottom: 2rem;
+}
+#contact .contact-form input {
+    padding: 25px;
+}
+#contact .contact-form textarea {
+    height: 150px;
+}
+#contact .contact-form input[type="submit"] {
+    padding: 15px 0px;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-family: var(--medium);
+    background-color: var(--primary);
+    color: var(--lighter);
+    line-height: 0;
+    height: 60px;
+    transition: 0.4s ease all;
+
+}
+#contact .contact-form input[type="submit"]:hover {
+    background-color: var(--dark);
+}
+#contact .contact-form input:focus, .contact-form textarea:focus {
+    box-shadow: 0px 0px 0px;
+}
+#contact .contact-form .input-group .input-group-text {
+    color: var(--primary);
+    background-color: transparent;
+    padding: 15px;
+}
+/* -------
+10- Slider
+-------- */
+section.slider {
+    padding: 6rem 0rem;
+}
+.carousel-indicators li {
+    background-color: var(--primary);
+}
+/* ------------
+11- Footer 
+----------- */
+.footer-section {
+    background-color: var(--secondary);
+    position: relative;
+}
+.footer-heading h2 {
+    color: var(--lighter);
+    font-family: var(--medium);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding-bottom: 1.5rem;
+}
+.footer-heading p, .footer-section .adress-card p {
+    font-family: var(--light);
+    font-size:0.9rem;
+}
+.footer-social ul li a {
+    color: var(--lighter);
+    background-color: var(--primary);
+    padding: 5px 10px;
+    margin-right: 0.2rem;
+}
+.footer-social ul li a:hover {
+    background-color: var(--lighter);
+    color: var(--primary);
+}
+.footer-section .flicker-img img {
+    width: 100px;
+    margin-bottom:0.2rem;
+    filter: grayscale(2);
+    transition: 0.5s ease all;
+}
+.footer-section .flicker-img img:hover {
+    filter: grayscale(0);
+}
+.footer-section .adress-card span {
+    margin-right: 0.7rem;
+    color: var(--primary);
+}
+.footer-section .copyright {
+    background-color: var(--dark);
+}
+.footer-section .copyright p {
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: var(--regular);
+    padding: 2rem 0;
+}
+.developer:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.bookmark {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width:40px;
+    height:40px;
+    border: 2px solid var(--primary);
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.2rem;
+    font-family: var(--light);
+    color: var(--primary);
+    position: fixed;
+}
+.bookmark:hover {
+    color: var(--lighter);
+    background-color: var(--primary);
+    
+}
